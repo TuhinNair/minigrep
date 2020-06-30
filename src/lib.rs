@@ -9,7 +9,7 @@ pub struct Config {
 impl Config {
     pub fn new(args: &[String]) -> Result<Self, &str> {
         if args.len() < 3 {
-            Err("Not enough arguments")
+            Err("Not enough arguments!")
         } else {
             let query: String = args[1].clone();
             let filename: String = args[2].clone();
